@@ -1,2 +1,2 @@
-# test
-test repo
+# Useful PowerShell scripts
+$PSVersionTable
