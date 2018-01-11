@@ -1,0 +1,2 @@
+https://uefafoundation.org/server.txt
+https://staging.uefafoundation.org/server.txt
