@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Alert email will be send if free space of the Oracle database is less than 20% -->
+<DB_list>
+ <Database dbName="TES004" dbUser="TES" dbPassword="TES004" Threshold="20" MailRecipients="user@mail.com"/>
+ <Database dbName="TES005" dbUser="TES" dbPassword="TES005" Threshold="20" MailRecipients="user@mail.com"/>
+ 
+</DB_list>
