@@ -1,0 +1,175 @@
+{
+  "Moss_Environments": [
+    {
+      "Environment": "DEV",
+      "URL_healthcheck": "http://moss-dev/health/",
+      "DB_ConnectionString": "Server = LDN1; Database = RNA_DEV1; Integrated Security = SSPI; MultiSubnetFailover=True",
+      "Servers": [
+        {
+          "ServerName": "moss-dev-1",
+          "Services": [
+            "MossServiceInterface",
+            "MossMonitor",
+            "ScenarioService",
+            "moss redis cluster slave",
+            "moss redis cluster master",
+            "moss redis"
+          ],
+          "URL": {
+            "MossInterface": "http://moss-dev-1",
+            "ScenarioServices": "http://moss-dev-1:8090/ScenarioService.html"
+          }
+        },
+        {
+          "ServerName": "moss-dev-2",
+          "Services": [
+            "MossServiceInterface",
+            "MossMonitor",
+            "ScenarioService",
+            "moss redis cluster slave",
+            "moss redis cluster master",
+            "moss redis"
+          ],
+          "URL": {
+            "MossInterface": "http://moss-dev-2",
+            "ScenarioServices": "http://moss-dev-2:8090/ScenarioService.html"
+          }
+        }
+      ]
+    },
+    {
+      "Environment": "SIT",
+      "URL_healthcheck": "http://moss-sit/health/",
+      "DB_ConnectionString": "Server = GBR1,10601; Database = RNA_SIT1; Integrated Security = SSPI; MultiSubnetFailover=True",
+      "Servers": [
+        {
+          "ServerName": "moss-sit-1",
+          "Services": [
+            "MossServiceInterface",
+            "MossMonitor",
+            "ScenarioService",
+            "moss redis cluster slave",
+            "moss redis cluster master",
+            "moss redis"
+          ],
+          "URL": {
+            "MossInterface": "http://moss-sit-1",
+            "ScenarioServices": "http://moss-sit-1"
+          }
+        },
+        {
+          "ServerName": "moss-sit-2",
+          "Services": [
+            "MossServiceInterface",
+            "MossMonitor",
+            "ScenarioService",
+            "moss redis cluster slave",
+            "moss redis cluster master",
+            "moss redis"
+          ],
+          "URL": {
+            "MossInterface": "http://moss-sit-2",
+            "ScenarioServices": "http://moss-sit-2"
+          }
+        }
+      ]
+    },
+    {
+      "Environment": "PDN-OCTON",
+      "URL_healthcheck": "http://moss-pdn-octon/health/",
+      "DB_ConnectionString": "Server = GBR7,10601; Database = RNA_OCTON; Integrated Security = SSPI; MultiSubnetFailover=True",
+      "Servers": [
+        {
+          "ServerName": "moss-pdn-octon-1",
+          "Services": [
+            "MossServiceInterface",
+            "MossMonitor",
+            "ScenarioService",
+            "moss redis cluster slave",
+            "moss redis cluster master",
+            "moss redis"
+          ],
+          "URL": {
+            "MossInterface": "http://moss-pdn-octon-1",
+            "ScenarioServices": "http://moss-pdn-octon-1"
+          }
+        },
+        {
+          "ServerName": "moss-pdn-octon-2",
+          "Services": [
+            "MossServiceInterface",
+            "MossMonitor",
+            "ScenarioService",
+            "moss redis cluster slave",
+            "moss redis cluster master",
+            "moss redis"
+          ],
+          "URL": {
+            "MossInterface": "http://moss-pdn-octon-2",
+            "ScenarioServices": "http://moss-pdn-octon-2"
+          }
+        },
+        {
+          "ServerName": "moss-pdn-octon-3",
+          "Services": [
+            "MossServiceInterface",
+            "MossMonitor",
+            "ScenarioService",
+            "moss redis cluster slave",
+            "moss redis cluster master",
+            "moss redis"
+          ],
+          "URL": {
+            "MossInterface": "http://moss-pdn-octon-3",
+            "ScenarioServices": "http://moss-pdn-octon-3"
+          }
+        },
+        {
+          "ServerName": "moss-pdn-octon-4",
+          "Services": [
+            "MossServiceInterface",
+            "MossMonitor",
+            "ScenarioService",
+            "moss redis cluster slave",
+            "moss redis cluster master",
+            "moss redis"
+          ],
+          "URL": {
+            "MossInterface": "http://moss-pdn-octon-4",
+            "ScenarioServices": "http://moss-pdn-octon-4"
+          }
+        },
+        {
+          "ServerName": "moss-pdn-octon-5",
+          "Services": [
+            "MossServiceInterface",
+            "MossMonitor",
+            "ScenarioService",
+            "moss redis cluster slave",
+            "moss redis cluster master",
+            "moss redis"
+          ],
+          "URL": {
+            "MossInterface": "http://moss-pdn-octon-5",
+            "ScenarioServices": "http://moss-pdn-octon-5"
+          }
+        },
+        {
+          "ServerName": "moss-pdn-octon-6",
+          "Services": [
+            "MossServiceInterface",
+            "MossMonitor",
+            "ScenarioService",
+            "moss redis cluster slave",
+            "moss redis cluster master",
+            "moss redis"
+          ],
+          "URL": {
+            "MossInterface": "http://moss-pdn-octon-6",
+            "ScenarioServices": "http://moss-pdn-octon-6"
+          }
+        }
+      ]
+    }
+  ]
+}
