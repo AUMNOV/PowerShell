@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Alert email will be send if the Oracle database is is older than 3 days -->
+<DB_list>
+ <Database dbName="TES04" dbUser="TES" dbPassword="TES04" Threshold="3" MailRecipients="user@mail.com"/>
+ <Database dbName="TES05" dbUser="TES" dbPassword="TES05" Threshold="3" MailRecipients="user@mail.com"/>
+ 
+</DB_list>
