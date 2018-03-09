@@ -1,0 +1,3 @@
+@Echo on
+Echo Script is running...
+C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File "\\uefafssql01.uefa.local\SQL_DATA\DBA_tools\ServiceAccounts\ServiceAccounts.ps1"
